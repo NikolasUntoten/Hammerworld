@@ -4404,7 +4404,68 @@
         </array>
     </dictionary>
     <dictionary name="doodads">
-        <array name="doodads"></array>
+        <array name="doodads">
+            <dictionary>
+                <int name="id">1</int>
+                <string name="type">doodads/theme_a/a_h_8.xml</string>
+                <vec2 name="pos">1 1</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">2</int>
+                <string name="type">doodads/theme_a/a_h_8.xml</string>
+                <vec2 name="pos">2 1</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">3</int>
+                <string name="type">doodads/theme_a/a_h_8.xml</string>
+                <vec2 name="pos">3 1</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">4</int>
+                <string name="type">doodads/theme_a/a_h_8.xml</string>
+                <vec2 name="pos">4 1</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">5</int>
+                <string name="type">doodads/theme_a/a_v_8.xml</string>
+                <vec2 name="pos">5 1</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">6</int>
+                <string name="type">doodads/theme_a/a_v_8.xml</string>
+                <vec2 name="pos">5 2</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">7</int>
+                <string name="type">doodads/theme_a/a_v_8.xml</string>
+                <vec2 name="pos">5 3</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">8</int>
+                <string name="type">doodads/theme_a/a_v_8.xml</string>
+                <vec2 name="pos">5 4</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">9</int>
+                <string name="type">doodads/theme_a/a_v_8.xml</string>
+                <vec2 name="pos">5 5</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+            <dictionary>
+                <int name="id">10</int>
+                <string name="type">doodads/theme_a/a_crn_r_up.xml</string>
+                <vec2 name="pos">5 0</vec2>
+                <bool name="need-sync">False</bool>
+            </dictionary>
+        </array>
     </dictionary>
     <dictionary name="actors">
     </dictionary>

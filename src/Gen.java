@@ -58,7 +58,10 @@ public class Gen {
 		println(indent, "<dictionary name=\"doodads\">");
 		indent = add(indent);
 		
-		println(indent, "<array name=\"doodads\"></array>");
+		//println(indent, "<array name=\"doodads\"></array>");
+		WallMap m = new WallMap();
+		m.corner(1, 5, 0, 5);
+		m.printMap(indent);
 		
 		indent = sub(indent);
 		println(indent, "</dictionary>");
