@@ -60,7 +60,7 @@ public class Gen {
 		
 		//println(indent, "<array name=\"doodads\"></array>");
 		WallMap m = new WallMap();
-		m.corner(1, 5, 0, 5);
+		new Maze(50, 5).addWalls(m);
 		m.printMap(indent);
 		
 		indent = sub(indent);

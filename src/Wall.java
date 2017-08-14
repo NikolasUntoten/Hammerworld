@@ -15,6 +15,11 @@ public class Wall {
 		matID.put(Material.V_CAP_UP, "doodads/theme_a/a_v_cap_up.xml");
 		matID.put(Material.H_CAP_R, "doodads/theme_a/a_h_cap_r.xml");
 		matID.put(Material.H_CAP_L, "doodads/theme_a/a_h_cap_l.xml");
+		matID.put(Material.X_DN, "doodads/theme_a/a_x_t_dn.xml");
+		matID.put(Material.X_L, "doodads/theme_a/a_x_t_l.xml");
+		matID.put(Material.X_R, "doodads/theme_a/a_x_t_r.xml");
+		matID.put(Material.X_UP, "doodads/theme_a/a_x_t_up.xml");
+		matID.put(Material.X_X, "doodads/theme_a/a_x_x.xml");
 	}
 	
 	public int x;
@@ -47,6 +52,6 @@ public class Wall {
 	
 	
 	public enum Material {
-		HORIZ, VERT, C_RU, C_RD, C_LU, C_LD, V_CAP_DN, V_CAP_UP, H_CAP_R, H_CAP_L
+		HORIZ, VERT, C_RU, C_RD, C_LU, C_LD, V_CAP_DN, V_CAP_UP, H_CAP_R, H_CAP_L, X_DN, X_L, X_R, X_UP, X_X
 	}
 }
