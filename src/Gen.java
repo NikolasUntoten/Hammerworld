@@ -57,12 +57,17 @@ public class Gen {
 	private static void doodads(String indent) {
 		println(indent, "<dictionary name=\"doodads\">");
 		indent = add(indent);
+		Gen.println(indent, "<array name=\"doodads\">");
+		indent = Gen.add(indent);
 		
 		//println(indent, "<array name=\"doodads\"></array>");
+		int total = 0;
 		WallMap m = new WallMap();
-		new Maze(50, 5).addWalls(m);
-		m.printMap(indent);
+		new Maze(50, 10).addWalls(m);
+		total = m.printMap(indent);
 		
+		indent = Gen.sub(indent);
+		Gen.println(indent, "</array>");
 		indent = sub(indent);
 		println(indent, "</dictionary>");
 	}

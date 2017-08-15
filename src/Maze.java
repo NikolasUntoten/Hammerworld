@@ -156,6 +156,8 @@ public class Maze {
 		if (x+1 < size) {
 			if (!tops[x][y]) {
 				map.horizStretch(x * scale + scale/2 - offset, x * scale + 1 - offset, y*scale - 1 - offset);
+				int rand = 2 + (int) (Math.random() * (scale-2));
+				map.addTorch(x * scale + rand - offset, y*scale + 2 - offset);
 				right = true;
 			}
 		}

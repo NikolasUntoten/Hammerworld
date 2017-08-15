@@ -4,14 +4,20 @@ import java.util.List;
 public class WallMap {
 
 	private List<Wall> walls;
+	private List<Torch> torches;
 
 	public WallMap() {
 		walls = new ArrayList<Wall>();
+		torches = new ArrayList<Torch>();
 	}
 
 	// sets a specific location of a material to true
 	public void set(int x, int y, Wall.Material mat) {
 		walls.add(new Wall(x, y, mat));
+	}
+	
+	public void addTorch(int x, int y) {
+		torches.add(new Torch(x, y));
 	}
 
 	public void horizStretch(int startX, int endX, int y) {
@@ -64,7 +70,7 @@ public class WallMap {
 	}
 
 	public void corner(int startX, int midX, int midY, int endY) {
-		horizStretch(startX, midX-1, midY);//TODO negative walls will be fucky
+		horizStretch(startX, midX-1, midY);
 		vertStretch(midY+1, endY, midX);
 		
 		Wall corner;
@@ -93,17 +99,19 @@ public class WallMap {
 	}
 
 	// prints all map data
-	public void printMap(String indent) {
-		Gen.println(indent, "<array name=\"doodads\">");
-		indent = Gen.add(indent);
-
+	public int printMap(String indent) {
+		
 		int x = 1;
 		for (Wall w : walls) {
 			w.print(indent, x);
 			x++;
 		}
+		
+		for (Torch t : torches) {
+			t.print(indent, x);
+			x++;
+		}
 
-		indent = Gen.sub(indent);
-		Gen.println(indent, "</array>");
+		return x;
 	}
 }
